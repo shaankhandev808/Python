@@ -55,5 +55,9 @@ def main():
     except AttributeError as e:
         print("AttributeError:", e)
 
+    second_player = Player("Shaan", 120, 12, 12)
+
+    print("Name: " + second_player.name)
+
 if __name__ == "__main__":
     main()
