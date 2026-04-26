@@ -1,6 +1,7 @@
-# Dataclass = Structs in C. 
+"""
+Slotted dataclass = Structs in C. 
 # 
-# Dataclass offers us a way to maintain and update 
+# Slotted dataclass offers us a way to maintain and update 
 # state in a way that is even quicker than dicts. 
 # A struct is a custom grouping of data types -- this
 # is in contrast to an array, where everything is of
@@ -12,12 +13,15 @@
 # Dict-backed object: “Find the key named health, then 
 # return its value.”
 
-# Slotted object: “Go straight to the reserved place for 
-# health.”
+Slotted object: “Go straight to the reserved place for 
+health.”
 
-# This is why slotted dataclasses are faster than dicts. 
+This is why slotted dataclasses are faster than dicts. 
 
-# Now lets see dataclass in action.
+Now lets see dataclass in action.
+
+"""
+
 from dataclasses import dataclass
 
 @dataclass(slots=True) # Decorator gives initializer. 
